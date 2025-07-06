@@ -6,6 +6,6 @@ services:
     devices:
       - /dev/bus/usb/001/002:/dev/bus/usb/001/002
     ports:
-      - "1080:1080"
+      - "1081:1081"
       - "30003:30003"
     privileged: true

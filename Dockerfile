@@ -7,7 +7,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-EXPOSE 1080 30003 30005
+EXPOSE 1081 30003 30005
 
 ENTRYPOINT ["/usr/bin/dump1090-mutability"]
-CMD ["--device-index", "0", "--gain", "20", "--net", "--net-sbs-port", "30003", "--net-http-port", "1080", "--interactive"]
+CMD ["--device-index", "0", "--gain", "20", "--net", "--net-sbs-port", "30003", "--net-http-port", "1081", "--interactive"]
