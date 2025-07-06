@@ -1,0 +1,11 @@
+services:
+  dump1090:
+    build: .
+    container_name: dump1090
+    restart: unless-stopped
+    devices:
+      - /dev/bus/usb/001/002:/dev/bus/usb/001/002
+    ports:
+      - "1080:1080"
+      - "30003:30003"
+    privileged: true

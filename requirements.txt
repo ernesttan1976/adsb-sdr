@@ -1,0 +1,3 @@
+rtlsdr-scanner
+numpy
+airspy
