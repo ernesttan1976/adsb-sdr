@@ -10,4 +10,4 @@ RUN apt-get update && \
 EXPOSE 1081 30003 30005
 
 ENTRYPOINT ["/usr/bin/dump1090-mutability"]
-CMD ["--device-index", "0", "--gain", "20", "--net", "--net-sbs-port", "30003", "--net-http-port", "1081", "--interactive"]
+CMD ["--device-index", "0", "--gain", "20", "--net", "--net-sbs-port", "30003", "--net-ro-port", "30002", "--interactive"]
